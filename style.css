@@ -1,32 +1,36 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 .sky {
     width: 100%;
     height: 100vh;
-    position: relative;
     background-color: #00ccff;
-    overflow-x: hidden;
     display: flex;
     justify-content: space-around;
 }
 
 .clouds {
-    width: 300px;
+    top: 2vw;
+    height: 10vw;
+    width: 20vw;
     background-image: url(clouds.png);
     background-repeat: no-repeat;
     background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
 }
 
-.clouds {
-    width: 300px;
-    background-image: url(clouds.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+.clouds span {
+    font-size: 2vw;
+    z-index: 99;
 }
-
 
 .airplane {
     position: absolute;
