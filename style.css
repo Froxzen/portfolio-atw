@@ -25,6 +25,11 @@
     justify-content: center;
     position: relative;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.clouds:hover {
+    transform: scale(1.1);
 }
 
 .clouds span {
