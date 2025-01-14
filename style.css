@@ -28,6 +28,18 @@
     transition: transform 0.3s ease-in-out;
 }
 
+.mountains {
+    position: absolute;
+    bottom: 0vw; 
+    left: 0;
+    height: 11.5vw;
+    width: 100%;
+    background-image: url(mountains.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    z-index: 99;
+}
+
 .clouds:hover {
     transform: scale(1.1);
 }
@@ -43,6 +55,18 @@
     justify-content: center;
     align-items: center;
     top: 50%;
-    left: 50%;
+    left: -20%;
     transform: translate(-50%, -50%);
+    animation: flyIn 3s ease-in-out forwards; 
+    z-index: 2;
+}
+
+@keyframes flyIn {
+    0% {
+        left: -20%;
+    }
+    100% {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
